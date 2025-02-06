@@ -12,6 +12,7 @@ library(httr)           # For making HTTP requests
 library(rnaturalearth)  # For fetching world map data
 library(rnaturalearthdata) # Additional world map data
 library(ggspatial)      # For spatial visualization enhancements
+library(lubridate)      # For ymd_hms() function
 
 # 🌍 Define Earthquake Data Source (Live API)
 url <- "http://www.geophysics.geol.uoa.gr/stations/gmaps3/event_output2j.php?type=cat"
