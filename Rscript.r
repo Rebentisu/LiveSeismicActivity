@@ -125,15 +125,13 @@ ggplot(eq_data_filtered, aes(x = DateTime, y = Magnitude, color = Magnitude_Cate
     plot.title = element_text(size = 16, face = "bold"),
     plot.subtitle = element_text(size = 12),
     legend.position = "none"
-  ) + 
+  ) +
+  theme_minimal() +
   theme(
-    plot.title = element_text(size = 18, face = "bold"),  # Bold and bigger title
-    plot.subtitle = element_text(size = 14),
-    legend.key = element_rect(fill = "white", color = NA),  # Improve legend visibility
-    legend.text = element_text(size = 14),  # Bigger legend text
-    legend.title = element_text(size = 16, face = "bold")  # Bold legend title
-  )
-    legend.key = element_rect(fill = "white", color = NA),  # Improve legend visibility
-    legend.text = element_text(size = 14),  # Bigger legend text
-    legend.title = element_text(size = 16, face = "bold")  # Bold legend title
-  )
+    axis.text.x = element_text(angle = 45, hjust = 1, size = 12),  # Rotate x-axis labels for readability
+    axis.text.y = element_text(size = 12),
+    plot.title = element_text(size = 16, face = "bold"),
+    plot.subtitle = element_text(size = 12),
+    legend.position = "none"
+  ) 
+
